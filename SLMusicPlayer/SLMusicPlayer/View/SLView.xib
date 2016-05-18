@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SLView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zhuanpan-1" id="cA1-tC-soC">
+                    <rect key="frame" x="67" y="137" width="240" height="240"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cm2_play_needle_play-ip6" id="Isu-pv-7Dh">
+                    <rect key="frame" x="144" y="14" width="111" height="183"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="郑源" id="21C-Kh-r8F">
+                    <rect key="frame" x="107" y="176" width="161" height="161"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="VBB-Im-2mN" userLabel="上一曲">
+                    <rect key="frame" x="66" y="588" width="49" height="49"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="cm2_play_btn_prev"/>
+                    <connections>
+                        <action selector="prev:" destination="iN0-l3-epB" eventType="touchUpInside" id="JxX-lu-Lio"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="HB5-5f-U1s" userLabel="播放">
+                    <rect key="frame" x="163" y="588" width="49" height="49"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="cm2_fm_btn_play"/>
+                    <state key="highlighted" image="cm2_fm_btn_pause"/>
+                    <connections>
+                        <action selector="play:" destination="iN0-l3-epB" eventType="touchUpInside" id="Rh1-h6-t6J"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Mph-hI-1BR" userLabel="下一曲">
+                    <rect key="frame" x="260" y="588" width="49" height="49"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="cm2_fm_btn_next"/>
+                    <connections>
+                        <action selector="next:" destination="iN0-l3-epB" eventType="touchUpInside" id="rgh-7a-Pvz"/>
+                    </connections>
+                </button>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="4sn-U7-Myo">
+                    <rect key="frame" x="52" y="535" width="270" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" red="0.6382330067839268" green="0.55069703191715103" blue="0.97537630890052351" alpha="1" colorSpace="calibratedRGB"/>
+                </slider>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dJ3-YU-pbn" userLabel="进度时间">
+                    <rect key="frame" x="15" y="539" width="36" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="c2j-7u-Kkc" userLabel="结束时间">
+                    <rect key="frame" x="328" y="539" width="36" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一直很安静" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pZC-VM-wVl">
+                    <rect key="frame" x="67" y="405" width="232" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.42714563249633586" green="0.65849133337938981" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <connections>
+                <outlet property="musicImage" destination="21C-Kh-r8F" id="HFe-1g-eQ5"/>
+                <outlet property="musicIndictor" destination="Isu-pv-7Dh" id="BOt-kj-2hT"/>
+                <outlet property="musicTitle" destination="pZC-VM-wVl" id="cr9-7N-TOQ"/>
+                <outlet property="progressTime" destination="dJ3-YU-pbn" id="ojt-bF-ITv"/>
+                <outlet property="timeSlider" destination="4sn-U7-Myo" id="WVc-MF-PPy"/>
+                <outlet property="totalTime" destination="c2j-7u-Kkc" id="6Qm-g1-t89"/>
+            </connections>
+            <point key="canvasLocation" x="188.5" y="342.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cm2_fm_btn_next" width="49" height="49"/>
+        <image name="cm2_fm_btn_pause" width="68" height="68"/>
+        <image name="cm2_fm_btn_play" width="68" height="68"/>
+        <image name="cm2_play_btn_prev" width="49" height="49"/>
+        <image name="cm2_play_needle_play-ip6" width="111" height="183"/>
+        <image name="zhuanpan-1" width="1018" height="1018"/>
+        <image name="郑源" width="496" height="506"/>
+    </resources>
+</document>
